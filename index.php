@@ -3,6 +3,8 @@
 $status = false;
 
 if($_POST){
+
+$order_id = rand(100,1000);
 	
 $product_name = $_POST['product_name'];
 
@@ -115,7 +117,7 @@ background: linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-2">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/13.webp"
+                    <img src="https://i5.walmartimages.com/asr/8f588317-0632-4bb6-a35f-968b799eea43.6ab190c05158f0ac3f61cb30727eaf0a.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff"
                       class="img-fluid" alt="Phone">
                   </div>
                   <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
@@ -164,7 +166,7 @@ if($status==false){
 
 ?>
 
-<form id="place_order_form" method="post" action="/urun_siparis/index.php" > 
+<form id="place_order_form" method="post" action="/productorder/productorder/index.php" > 
 
 <div id="order_form" class="container" style="display:none">
 	<div class="row">
